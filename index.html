@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Соцопитування</title>
+</head>
+<body>
+    
+     <p>
+         <h1>Пропонуємо пройти тест онлайн-опитування <br>
+         для космонавтів місії "Марс"</h1>
+     </p>
+     <form method="POST" action="https://formspree.io/bugerchuk@kpnu.km.ua">
+         <label>Введіть Ваше ім'я: 
+            <input type="text" name="user-name" required
+            placeholder="Петров Петро Петрович">
+        </label><br>
+        <label for="age">Виберіть Ваш вік </label>
+        <input type="number" id="age" name="user-age"
+          value="18" min="16" max="100"><br>
+        Виберіть Вашу стать
+        <br>
+        <label><input type="radio" name="gender" value="male" checked>Чоловіча</label>
+        <label><input type="radio" name="gender" value="female">Жіноча</label> 
+        <label><input type="radio" name="gender" value="other">Інша</label><br>    
+        <label>Ви любите найбільше відпочивати :</label><br>
+        <label><input type="radio" name="settlement" value="sea" checked>море</label><br>
+        <label><input type="radio" name="settlement" value="mountains">гори</label> <br>
+        <label><input type="radio" name="settlement" value="other">інше</label><br>
+        <label>Улюблена їжа:<br><input type="text"  placeholder="Сосиски" name="food"></label><br>
+        <label>Шо ви любите поїсти?<br>
+        <select name="foodprefere">
+        <option value="vegan">Вегетеріанець</option>
+        <option value="meat">М'ясо</option>
+        <option value="all">Все, що мене не вб'є</option>
+        </select>
+        </label><br>
+        <br>
+        <label>Чим ви любите займатись у вільний час: </label><br>
+        <label><input type="checkbox" name="hobby"/>Ловлю зайців</label><br>
+        <label><input type="checkbox" name="hobby"/>На вихідних сплю</label><br>
+        <label><input type="checkbox" name="hobby"/>Смачно їм</label><br>
+        <label><input type="checkbox" name="hobby"/>Харчуюсь енергією сонця</label><br>
+        <label><input type="checkbox" name="hobby"/>Також люблю</label><br>
+        <input type="text"  placeholder="Якщо того мало" name="hobby"></label><br>
+        <label>Як добре ви знаєте Зоряні Війни :</label><br>
+        <label><input type="checkbox" name="starwars"/>Похвилинно цитую персонажів</label><br>
+        <label><input type="checkbox" name="starwars"/>Хто такі "Зоряні війни?"</label><br>
+        <br>
+       
+        <input type="submit" value="Відправити">
+        <input type="reset" value="Скинути">
+    </form>
+    <a href="tables.html">Таблиці</a>
+        
+        
+    </form>
+</body>
+</html>
