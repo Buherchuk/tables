@@ -14,17 +14,24 @@
      </p>
      <form method="POST" action="https://formspree.io/bugerchuk@kpnu.km.ua">
          <label>Введіть Ваше ім'я: 
-            <input type="text" name="user-name" required
+            <input id="name" type="text" name="name" required
             placeholder="Петров Петро Петрович">
         </label><br>
-        <label for="age">Виберіть Ваш вік </label>
-        <input type="number" id="age" name="user-age"
+        <label>Введіть Вашу пошту: 
+            <input id="email" type="email" name="email" required
+            placeholder="example@mail.com">
+        </label><br>
+        <label id="age" for="age">Виберіть Ваш вік </label>
+        <input type="number" id="age" name="age"
           value="18" min="16" max="100"><br>
         Виберіть Вашу стать
         <br>
-        <label><input type="radio" name="gender" value="male" checked>Чоловіча</label>
-        <label><input type="radio" name="gender" value="female">Жіноча</label> 
-        <label><input type="radio" name="gender" value="other">Інша</label><br>    
+         <input type="submit" value="Відправити">
+        <input type="reset" value="Скинути">
+        <br>
+        <label><input id=male type="radio" name="gender" value="male" checked>Чоловіча</label>
+        <label><input id=female type="radio" name="gender" value="female">Жіноча</label> 
+        <label><input id=other type="radio" name="gender" value="other">Інша</label><br>    
         <label>Ви любите найбільше відпочивати :</label><br>
         <label><input type="radio" name="settlement" value="sea" checked>море</label><br>
         <label><input type="radio" name="settlement" value="mountains">гори</label> <br>
@@ -50,12 +57,18 @@
         <label><input type="checkbox" name="starwars"/>Хто такі "Зоряні війни?"</label><br>
         <br>
        
-        <input type="submit" value="Відправити">
-        <input type="reset" value="Скинути">
+       
     </form>
     <a href="tables.html">Таблиці</a>
         
         
     </form>
+       
+       <a href="table.html">Посилання на таблицю</a>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+        </script>   
+        <script src="script.js"></script>
 </body>
 </html>
